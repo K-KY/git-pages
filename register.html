@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
+</head>
+
+<body>
+    <div>
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <form action="form.php" method="post">
+                <table border="0px solid red">
+                    <h3>기본정보 입력</h3>
+
+                    <tr>
+                        <th style="text-align: left; width: 200px;"><strong>아이디</strong></th>
+                        <td><input type="text" name="id"></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><strong>비밀번호</strong></th>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left;"><strong>비밀번호 확인</strong></th>
+                        <td><input type="password" name="password-confirm"></td>
+                    </tr>
+                </table>
+                <table border="0px solid red">
+                    <h3>개인정보 입력</h3>
+
+                    <tr>
+                        <th style="text-align: left; width: 200px;"><strong>이름</strong></th>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <!-- 이메일 -->
+                    <tr>
+                        <th style="text-align: left;"><strong>이메일</strong></th>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label><input type="checkbox" name="email_agree"> 이메일 수신 동의</label></td>
+                    </tr>
+
+                    <!-- 전화번호 -->
+                    <tr>
+                        <th style="text-align: left;"><strong>전화번호</strong></th>
+                        <td><input type="tel" name="tel"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label><input type="checkbox" name="sms_agree"> SMS 수신 동의</label></td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="확인">
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
